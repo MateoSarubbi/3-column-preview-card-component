@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:hsl(0, 0%, 95%);
+}
+
+.container {
+    height: 1335px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:325px;
+    height:442px;
+    padding:50px;
+}
+
+.card--sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+
+.card--suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card--luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+}
+
+.card__icon {
+    width: 64px;
+    height: 40px;
+}
+
+.card__header {
+    color: hsl(0, 0%, 95%);
+    font-size:34px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.card__txt {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5em;
+}
+
+.btn {
+    height:48px;
+    width:146px;
+    font-family: 'Lexend Deca', sans-serif;
+    border: 1.5px solid hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    padding: 15px 32px;
+    border-radius: 25px;
+    cursor:pointer;
+}
+
+.btn--sedans {
+    color:hsl(31, 77%, 52%);
+}
+.btn--sedans:active {
+    background-color:hsl(31, 77%, 52%);
+    color:hsl(0, 0%, 95%);
+}
+
+.btn--suvs {
+    color:hsl(184, 100%, 22%);
+}
+.btn--suvs:active {
+    background-color:hsl(184, 100%, 22%);
+    color:hsl(0, 0%, 95%);
+}
+
+.btn--luxury {
+    color:hsl(179, 100%, 13%);
+}
+.btn--luxury:active {
+    background-color:hsl(179, 100%, 13%);
+    color:hsl(0, 0%, 95%);
+}
+
+@media(min-width:1440px) {
+    .container {
+        height: 800px;
+        flex-direction:row;
+    }
+    .card {
+        height: 500px;
+        width: 308px;
+    }
+    .card--sedans {
+        border-radius: 10px 0 0 10px;
+    }
+    .card--luxury {
+        border-radius: 0 10px 10px 0;
+    }
+}
