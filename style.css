@@ -7,15 +7,16 @@
 }
 
 body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
     background-color:hsl(0, 0%, 95%);
 }
 
 .container {
-    height: 1335px;
     display:flex;
     flex-direction:column;
-    justify-content: center;
-    align-items: center;
 }
 
 .card {
@@ -48,8 +49,9 @@ body {
 
 .card__header {
     color: hsl(0, 0%, 95%);
-    font-size:34px;
+    font-size:38px;
     font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
 }
 
 .card__txt {
@@ -62,18 +64,21 @@ body {
 .btn {
     height:48px;
     width:146px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     font-family: 'Lexend Deca', sans-serif;
     border: 1.5px solid hsl(0, 0%, 95%);
     background-color: hsl(0, 0%, 95%);
-    padding: 15px 32px;
     border-radius: 25px;
-    cursor:pointer;
+    transition: all 0.5s ease;
 }
 
 .btn--sedans {
     color:hsl(31, 77%, 52%);
 }
-.btn--sedans:active {
+.btn--sedans:hover {
     background-color:hsl(31, 77%, 52%);
     color:hsl(0, 0%, 95%);
 }
@@ -81,7 +86,7 @@ body {
 .btn--suvs {
     color:hsl(184, 100%, 22%);
 }
-.btn--suvs:active {
+.btn--suvs:hover {
     background-color:hsl(184, 100%, 22%);
     color:hsl(0, 0%, 95%);
 }
@@ -89,14 +94,13 @@ body {
 .btn--luxury {
     color:hsl(179, 100%, 13%);
 }
-.btn--luxury:active {
+.btn--luxury:hover {
     background-color:hsl(179, 100%, 13%);
     color:hsl(0, 0%, 95%);
 }
 
 @media(min-width:1440px) {
     .container {
-        height: 800px;
         flex-direction:row;
     }
     .card {
